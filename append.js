@@ -39,5 +39,5 @@ sectionDress.innerHTML= `
 </ul>
 
 `
-
+mainContainer.appendChild(sectionDress)
 
