@@ -12,6 +12,9 @@
         .important-places{
             color: plum;
         }
+        /* .yellow-bg{
+    background: yellowgreen;
+} */
 
     </style>
 </head>
@@ -32,14 +35,14 @@
         </ul>
         </section>
         <section class="fruits-container">
-            <h1 id="fruits-item">Fruits I like</h1>
+            <h1 id="fruits-item" class="some-class blue-bg">Fruits I like</h1>
         <ul>
         <li>apple</li>
         <li>banana</li>
         <li>guava</li>
         </ul>
     </section>
-    <section>
+    <section id="places-container" class="large-text">
         <h1 id="places-item">places I like most</h1>
         <ul>
             <li class="important-places">Sundorban</li>
@@ -49,6 +52,7 @@
         </ul>
     </section>
         <script src="dom.js"></script>
+        <script src="styleIn.js"></script>
     <script>
      const liCollection = document.getElementsByTagName('li')
     //  console.log(liCollection);
@@ -65,7 +69,7 @@
 
     const places = document.getElementsByClassName('important-places');
     for(const place of places){
-        console.log(place.innerText)
+        // console.log(place.innerText)
     }
 
     //query selectorAll
