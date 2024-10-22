@@ -15,17 +15,17 @@ const h1 = document.createElement('h1');
 h1.innerText = 'my food list';
 section.appendChild(h1);
 const ul = document.createElement('ul');
-const li1= document.createElement('li1');
+const li1= document.createElement('li');
 li1.innerText= 'biryani';
-const li2 = document.createElement('li2');
+ul.appendChild(li1);
+const li2 = document.createElement('li');
 li2.innerText = 'borhani';
-const li3 = document.createElement('li3');
-li2.innerText = 'salad';
-
-
-
-
-// mainContainer.appendChild(section);
+ul.appendChild(li2);
+const li3 = document.createElement('li');
+li3.innerText = 'salad';
+ul.appendChild(li3);
+section.appendChild(ul);
+mainContainer.appendChild(section);
 
 
 
