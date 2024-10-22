@@ -6,36 +6,74 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        li{
+       .fruits-container li{
             color: green;
         }
+        .important-places{
+            color: plum;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>WElcome to my Awesome DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus deserunt, ratione repudiandae quam molestias quae inventore, sit sunt qui pariatur maxime? Magni aliquid eaque maxime animi fugit cum inventore?</p>
     </header>
     <main>
+        <section>
+            <h1 id="">my awesome DOM baba</h1>
+            
+            
         <ul>
             <li>jalali DOM</li>
         <li>Shafayat</li>
         <li>Bonobashi</li>
         </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-item">Fruits I like</h1>
         <ul>
-            <li>apple</li>
+        <li>apple</li>
         <li>banana</li>
         <li>guava</li>
         </ul>
+    </section>
+    <section>
+        <h1 id="places-item">places I like most</h1>
+        <ul>
+            <li class="important-places">Sundorban</li>
+            <li class="important-places">Bandorban</li>
+            <li class="important-places">Kuakata</li>
+            <li class="other-place">shalbon</li>
+        </ul>
+    </section>
         <script src="dom.js"></script>
     <script>
      const liCollection = document.getElementsByTagName('li')
     //  console.log(liCollection);
     for(const li of liCollection){
-        console.log(li.innerText)
+        // console.log(li.innerText)
     }
     const allHeading = document.getElementsByTagName('h1');
     for(const h1 of allHeading){
-        console.log(h1.innerText);
+        // console.log(h1.innerText);
+    }
+    // const fruitss = document.get
+    const fruits = document.getElementById('fruits-item');
+    fruits.innerText = ' Fruits changed by javaScript';
+
+    const places = document.getElementsByClassName('important-places');
+    for(const place of places){
+        console.log(place.innerText)
+    }
+
+    //query selectorAll
+
+    const query = document.querySelectorAll('.fruits-container li');
+    // console.log(query)
+    for(const li of query){
+        // console.log(li.innerText)
     }
 
 </script>
